@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#welcome-message {
+    display: none; /* Sembunyikan pesan sambutan awal */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #DFCCFB;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding-bottom: 12rem;
+}
+
+.nav-container {
+    background-color: #AD88C6;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.name {
+    font-size: 1.05rem;
+    color: white;
+    margin: 20px;
+}
+
+header .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+header .nav li {
+    padding: 4px 0 4px 0;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+header .nav li:hover {
+    box-shadow: 0 0 10px white;
+}
+
+header .nav li a {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.first {
+    padding-top: 12rem;
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.second {
+    padding: 8rem 50px 0 50px;
+    margin: 0 10px 0 10px;
+}
+
+.second header {
+    text-align: center;
+}
+
+.second .flex {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.second .about {
+    text-align: justify;
+    padding: 0 40px 0 40px;
+}
+
+.my-photo {
+    padding: 9px 40px 0 20px;
+}
+
+.photo {
+    height: 270px;
+    width: 260px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.photo:hover {
+    box-shadow: 0 0 18px white;
+}
+
+footer {
+    font-size: 13px;
+    width: 100%;
+    padding: 1px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sosmed ul {
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+.sosmed ul li {
+    margin: 0 30px;
+}
+
+.sosmed i {
+    font-size: 25px;
+    color: #756AB6;
+    transition: filter 0.3s ease;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sosmed .fab:hover {
+    color: white;
+}
+
+/* Responsivitas tablet */
+@media screen and (max-width: 768px) {
+    .welcome-message {
+        font-size: 1rem;
+    }
+
+    header .nav ul {
+        margin-right: 17px;
+    }
+
+    header .nav li {
+        margin: 0;
+    }
+
+    .second {
+        padding: 8rem 20px 0 20px;
+    }
+
+    .second .about {
+        padding: 0 30px 0 30px;
+    }
+
+    .my-photo {
+        padding: 9px 10px 0 20px;
+    }
+}
+
+/* Responsivitas smartphone */
+@media screen and (max-width: 480px) {
+    .welcome-message {
+        font-size: 0.5rem;
+    }
+
+    .first {
+        font-size: unset;
+        padding: 12rem 15px 0 15px;
+    }
+
+    .second .flex {
+        flex-direction: row-reverse;
+        flex-wrap: wrap-reverse;
+        font-size: 0.9rem;
+    }
+    
+    .second {
+        font-size: 0.9rem;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .name {
+        margin: 1px 0 1px 8px;
+        font-size: 0.9rem;
+    }
+
+    header .nav ul {
+        margin: 10px 8px 10px 15px;
+    }
+
+    header .nav li {
+        margin: 0;
+        padding: 2px;
+    }
+
+    header .nav li a {
+        font-size: 0.9rem;
+        margin: 3px;
+        padding: 9px 6px;
+    }
+
+    .photo {
+        height: 230px;
+        width: 220px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .sosmed ul li {
+        margin: 0 40px;
+    }
+
+    footer p {
+        margin-top: 30px;
+    }
+}

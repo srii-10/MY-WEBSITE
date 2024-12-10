@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to my Website</title>
+
+        <!-- My css -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+            rel="stylesheet">
+         
+        <!-- Font awesome 5.15.4 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+    </head>
+
+    <body>
+        <!-- navigation -->
+        <header class="nav-container">
+            <div class="name">
+                <b>SRI SEPTINA</b>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Welcoming page -->
+        <section class="first" id="home">
+            <div id="welcome-message">
+                <h1>Hello <span id="user-name"></span>,
+                    <p>thank you for visiting my website.</p>
+                    <p>Scroll down to get to know me!</p></h1>
+            </div>
+            <picture>
+                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.webp" type="image/webp">
+                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.gif" alt="😊" width="32" height="32">
+            </picture>
+        </section>
+
+            <!-- About me page -->
+            <article class="second" id="about">
+                <header>
+                    <h2>Hello, I'm Sri Septina 
+                        <picture>
+                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fc/512.webp" type="image/webp">
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fc/512.gif" alt="👋" width="32" height="32">
+                        </picture>
+                    </h2>
+                </header>
+                <div class="flex">
+                    <div class="about">
+                        <p>I'm one of the participants of Dicoding x IDCamp. I'm also an information systems student who focuses on Front-End. As a gap year student, it does not prevent me from creating my future. As the world of technology continues to develop, I am encouraged to learn the IT field. I am currently learning HTML and CSS, especially Javascript and focusing on Front-End Web. 
+                        </p>
+                        <p>I like things like making interface programs because I learned about it in high school. Therefore, I took a study program related to technology and interfaces, namely information systems. This made me want to learn the field of Software Engineer.
+                        </p>
+                    </div>
+                    <aside class="my-photo">
+                        <div>
+                            <img src="assets/foto1.jpg" alt="My Photo" class="photo">
+                        </div>
+                    </aside>
+                </div>
+            </article>
+        </main>
+        
+        <footer>
+            <div class="sosmed" id="contact">
+                <ul>
+                    <li><a href="https://www.instagram.com/sriisept_/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sri-septina-marpaung-7b43b7221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHkxSWN5cSJeqRAhRXFgZXg%3D%3D"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <p>@created by Sri Septina</p>
+        </footer>
+
+        <script>
+            // Fungsi untuk meminta nama pengguna
+            function askForUserName() {
+                const userName = prompt("Masukkan nama Anda:");
+                if (userName) {
+                    document.getElementById('user-name').textContent = userName; // Tampilkan nama
+                    document.getElementById('welcome-message').style.display = 'block'; // Tampilkan pesan sambutan
+                } else {
+                    alert("Nama tidak boleh kosong!"); // Pesan jika nama kosong
+                    askForUserName(); // Minta nama lagi
+                }
+            }
+    
+            // Panggil fungsi untuk meminta nama pengguna saat halaman dimuat
+            window.onload = askForUserName();
+        </script>
+    </body>
+</html>
