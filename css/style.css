@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-#welcome-message {
-    display: none; /* Sembunyikan pesan sambutan awal */
-}
-
 body {
     font-family: "Poppins", sans-serif;
     background-color: #DFCCFB;
     margin: 0;
-    height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -67,9 +62,13 @@ header .nav li a {
     font-weight: 500;
 }
 
+#welcome-message {
+    display: none; /* Sembunyikan pesan sambutan awal */
+}
+
 .first {
     padding-top: 12rem;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     text-align: center;
 }
 
@@ -115,7 +114,6 @@ header .nav li a {
 
 footer {
     font-size: 13px;
-    width: 100%;
     padding-top: 50px ;
 }
 
@@ -175,7 +173,7 @@ footer p {
 }
 
 /* Responsivitas smartphone */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 428px) {
     .nav-container {
         padding: 5px;
         align-items: center;
@@ -188,7 +186,7 @@ footer p {
 
     .first {
         font-size: 0.9rem;
-        padding: 11rem 15px 0 15px;
+        padding: 13rem 15px 0 15px;
     }
 
     .hello h2 {
