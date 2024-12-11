@@ -176,13 +176,19 @@ footer p {
 
 /* Responsivitas smartphone */
 @media screen and (max-width: 480px) {
+    .nav-container {
+        padding: 5px;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
     .welcome-message {
         font-size: 0.3rem;
     }
 
     .first {
         font-size: 0.9rem;
-        padding: 12rem 15px 0 15px;
+        padding: 11rem 15px 0 15px;
     }
 
     .hello h2 {
@@ -200,28 +206,23 @@ footer p {
         flex-direction: column;
     }
 
-    .nav-container {
-        align-items: center;
-        flex-wrap: nowrap;
-    }
-
     .name {
         margin: 1px 0 1px 8px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     header .nav ul {
-        margin: 10px 8px 10px 15px;
+        margin: 8px 8px 8px 15px;
     }
 
     header .nav li {
         margin: 0;
-        padding: 2px;
+        padding: 4px;
     }
 
     header .nav li a {
-        font-size: 0.9rem;
-        margin: 3px;
+        font-size: 0.8rem;
+        margin: 4px;
         padding: 9px 6px;
     }
 
