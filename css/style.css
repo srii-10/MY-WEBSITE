@@ -116,7 +116,7 @@ header .nav li a {
 footer {
     font-size: 13px;
     width: 100%;
-    padding: 1px;
+    padding-top: 50px ;
 }
 
 footer p {
@@ -223,6 +223,11 @@ footer p {
         font-size: 0.9rem;
         margin: 3px;
         padding: 9px 6px;
+    }
+
+    .first {
+        padding-top: 14rem;
+        margin-bottom: 8rem;
     }
 
     .photo {
