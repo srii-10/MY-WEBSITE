@@ -39,24 +39,24 @@
                 </ul>
             </nav>
         </header>
-
+        
         <main>
             <!-- Welcoming page -->
-        <section class="first" id="home">
-            <div id="welcome-message">
-                <h1>Hello <span id="user-name"></span>,
-                    <p>thank you for visiting my website.</p>
-                    <p>Scroll down to get to know me!</p></h1>
-            </div>
-            <picture>
-                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.webp" type="image/webp">
-                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.gif" alt="😊" width="32" height="32">
-            </picture>
-        </section>
+             <section class="first" id="home">
+                <div id="welcome-message">
+                    <h1>Hello <span id="user-name"></span>,
+                        <p>thank you for visiting my website.</p>
+                        <p>Scroll down to get to know me!</p></h1>
+                </div>
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60a/512.gif" alt="😊" width="32" height="32">
+                </picture>
+            </section>
 
             <!-- About me page -->
             <article class="second" id="about">
-                <header>
+                <header class="hello">
                     <h2>Hello, I'm Sri Septina 
                         <picture>
                             <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b_1f3fc/512.webp" type="image/webp">
@@ -83,28 +83,15 @@
         <footer>
             <div class="sosmed" id="contact">
                 <ul>
-                    <li><a href="https://www.instagram.com/sriisept_/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sri-septina-marpaung-7b43b7221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHkxSWN5cSJeqRAhRXFgZXg%3D%3D"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
             <p>@created by Sri Septina</p>
         </footer>
 
-        <script>
-            // Fungsi untuk meminta nama pengguna
-            function askForUserName() {
-                const userName = prompt("Masukkan nama Anda:");
-                if (userName) {
-                    document.getElementById('user-name').textContent = userName; // Tampilkan nama
-                    document.getElementById('welcome-message').style.display = 'block'; // Tampilkan pesan sambutan
-                } else {
-                    alert("Nama tidak boleh kosong!"); // Pesan jika nama kosong
-                    askForUserName(); // Minta nama lagi
-                }
-            }
-    
-            // Panggil fungsi untuk meminta nama pengguna saat halaman dimuat
-            window.onload = askForUserName();
-        </script>
+        <script src="js/script.js""></script>
     </body>
 </html>

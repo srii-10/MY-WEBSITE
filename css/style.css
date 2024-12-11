@@ -12,7 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
     background-color: #DFCCFB;
     margin: 0;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -76,6 +76,14 @@ header .nav li a {
 .second {
     padding: 8rem 50px 0 50px;
     margin: 0 10px 0 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.second.visible {
+    opacity: 5;
+    transform: translateY(0);
 }
 
 .second header {
@@ -101,11 +109,8 @@ header .nav li a {
     height: 270px;
     width: 260px;
     border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-.photo:hover {
     box-shadow: 0 0 18px white;
+    transition: all 0.3s ease;
 }
 
 footer {
@@ -115,6 +120,7 @@ footer {
 }
 
 footer p {
+    color: #606676;
     text-align: center;
     margin-top: 40px;
 }
@@ -133,7 +139,6 @@ footer p {
 .sosmed i {
     font-size: 25px;
     color: #756AB6;
-    transition: filter 0.3s ease;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -172,12 +177,16 @@ footer p {
 /* Responsivitas smartphone */
 @media screen and (max-width: 480px) {
     .welcome-message {
-        font-size: 0.5rem;
+        font-size: 0.3rem;
     }
 
     .first {
-        font-size: unset;
+        font-size: 0.9rem;
         padding: 12rem 15px 0 15px;
+    }
+
+    .hello h2 {
+        font-size: 1.3rem;
     }
 
     .second .flex {
@@ -217,8 +226,8 @@ footer p {
     }
 
     .photo {
-        height: 230px;
-        width: 220px;
+        height: 210px;
+        width: 200px;
     }
 
     footer {
