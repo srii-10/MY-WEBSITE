@@ -173,7 +173,7 @@ footer p {
 }
 
 /* Responsivitas smartphone */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 480px) {
     .nav-container {
         padding: 5px;
         align-items: center;
@@ -186,7 +186,7 @@ footer p {
 
     .first {
         font-size: 0.9rem;
-        padding: 13rem 15px 0 15px;
+        padding: 12rem 15px 0 15px;
     }
 
     .hello h2 {
