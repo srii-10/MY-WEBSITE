@@ -6,7 +6,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #DFCCFB;
+    background-color: #1A1A1D;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -16,8 +16,9 @@ main {
     padding-bottom: 12rem;
 }
 
+/* navigation */
 .nav-container {
-    background-color: #AD88C6;
+    background-color: #6A1E55;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -52,6 +53,7 @@ header .nav li {
 
 header .nav li:hover {
     box-shadow: 0 0 10px white;
+    background-color: #6A1E55;
 }
 
 header .nav li a {
@@ -62,8 +64,10 @@ header .nav li a {
     font-weight: 500;
 }
 
+/* welcoming */
 #welcome-message {
     display: none; /* Sembunyikan pesan sambutan awal */
+    color: #DDDDDD;
 }
 
 .first {
@@ -71,8 +75,9 @@ header .nav li a {
     margin-bottom: 8rem;
     text-align: center;
 }
-
+ /* about me */
 .second {
+    color: #DDDDDD;
     padding: 8rem 50px 0 50px;
     margin: 0 10px 0 10px;
     opacity: 0;
@@ -108,7 +113,7 @@ header .nav li a {
     height: 270px;
     width: 260px;
     border-radius: 50%;
-    box-shadow: 0 0 18px white;
+    box-shadow: 0 0 17px #DDDDDD;
     transition: all 0.3s ease;
 }
 
@@ -136,7 +141,7 @@ footer p {
 
 .sosmed i {
     font-size: 25px;
-    color: #756AB6;
+    color: #A64D79;
     text-decoration: none;
     transition: all 0.3s ease;
 }
